@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: data-transceivers #当前服务的名称

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kangkang.mapper.ProductMapper">
+
+    <select id="selectBySourceCode" resultType="com.kangkang.entity.Product">
+        select * from t_product where source_code  = #{sourceCode}
+    </select>
+
+
+    <select id="searchAllProduct" resultType="com.kangkang.entity.Product">
+        select
+            pid,fid,park,charge,tempreature,humidity,light,soil,tran_person,star_location,end_location,sale_price,sale_time,process_name,quality_person,process_person
+            ,process_person,process_date,storage_location
+        from
+            t_product
+
+    </select>
+
+
+</mapper>
